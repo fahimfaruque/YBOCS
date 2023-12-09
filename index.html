@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y-BOCS Assessment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yale-Brown Obsessive Compulsive Scale (Y-BOCS)</h1>
+        
+        <form id="yBocsForm">
+            <fieldset>
+                <legend>Patient Information</legend>
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" name="patientName" required>
+
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+
+                <label for="todayDate">Today's Date:</label>
+                <input type="date" id="todayDate" name="todayDate" required>
+            </fieldset>
+
+            <fieldset id="checklistSection">
+                <legend>Checklist of Symptoms</legend>
+                <!-- Dynamic checklist generated here -->
+            </fieldset>
+
+            <fieldset id="assessmentSection">
+                <legend>Severity Assessment</legend>
+                <!-- Dynamic severity assessment questions generated here -->
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
